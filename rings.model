@@ -1,0 +1,110 @@
+{
+  "rings": [
+    {
+      "ring_index": 0,
+      "steps": [
+        {
+          "index": 0,
+          "keys": [
+            {
+              "public": "0352de0cf74d4e28dfdbd619474415efad036bf8ff6f3d44dbffa17771742d6147",
+              "secret": null
+            },
+            {
+              "public": "0248b4c3b5b2844f2e19e4ff6ab64124967a340b0772b7b7fb52e8dca464c74b1b",
+              "secret": null
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "keys": [
+            {
+              "public": "0268dddfabfda5c7bd9692988a0ef73aed8239de250c073f131f25b7508fabe3a7",
+              "secret": "f25d2a0e9f66b5de57e2c8fa7dc7b02db90b46678f21479c4a8595617ea6122c"
+            },
+            {
+              "public": "03b6e9f4a9da3865a02d8330a7d36db13550c4d0054a75c995dedbe0e4f3cb2776",
+              "secret": "dcb5ba92d53e161a6513d307d3ca02d28d3c7ead1504f804413721dd1a352c73"
+            },
+            {
+              "public": "0214b9280700e7764b49aa15a569e1b20fedfeec6f934ae73a2baf40773abce47d",
+              "secret": "4faeff4f704dc8d29bc385e745da6d1519374962a526d941c1841e1c17f67384"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ring_index": 1,
+      "steps": [
+        {
+          "index": 0,
+          "keys": [
+            {
+              "public": "02700c406331f1779bf15365d80ba8cb180c754f645586c9105f79e805e438408b",
+              "secret": null
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "keys": [
+            {
+              "public": "0388e815449ff5c1b1687d6e74cc4118161bf2c0ce76d3dd7706d52ebd4b2215cd",
+              "secret": "8f0275a8eeeff88bf2f81f5e97b1620c88697b6fb59d5abb7caca29fa97e4070"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "keys": [
+            {
+              "public": "03e149b6786ec4d840ff0901ee65014f1b780e5faa6de9a6c2ec71c06fe58ff6f9",
+              "secret": null
+            },
+            {
+              "public": "03bdb24adcc38034a6a76e0b6320b9ab1e82ef1d4de63f54efa5ad68670a41ae9e",
+              "secret": null
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "keys": [
+            {
+              "public": "02222df3bfa94b65f2930b01da46566e50f5b66dcd50fa8b4daf03a3a05ff185fe",
+              "secret": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ring_index": 2,
+      "steps": [
+        {
+          "index": 0,
+          "keys": [
+            {
+              "public": "02c39a147d7ef60df88c8e4c00b2e0a56b1b2c5fedda0a855e64b05bf2f1e441f5",
+              "secret": "7d61d608b0737cbaa9afa4d63c9cb1c468b1bfaf55ec9c3907545ccdb8b54853"
+            },
+            {
+              "public": "02ea57e65a9335af3b1b84ef28139f3f77900e40259098aa67b6605bedee863b9a",
+              "secret": "9ef294ed80c7bc89001ecfe27d1c37dedf531d522445ac680a8f455bf108616b"
+            },
+            {
+              "public": "0242240978fea4a2dc6efd9b1eb4f5819ae9093d05e810301f1945da01128805d3",
+              "secret": "7a2cd3c7f4675a055e4107551b578d1d7ef3e8204bf73f4860c48739978c731f"
+            },
+            {
+              "public": "03077800bf8dccf3ed83cd90f4f0f57d3f4a6191d1b9a8cdd7c78b0246292a012d",
+              "secret": "4136e71746e5b6dc969f3fa22bb48099594bf4529e66d7d104f6830e2b0ddc9c"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ def load(filename):
 
 def save(filename, rings_model):
     with open(filename, "w") as outfile:
-        json.dump(rings_model.to_json(), outfile)
+        json.dump(rings_model.to_json(), outfile, indent=2)
 
 class PirromeanRingsModel:
 
