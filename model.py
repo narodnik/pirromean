@@ -18,6 +18,9 @@ class PirromeanRingsModel:
     def __str__(self):
         return pprint.pformat(self.to_json(), indent=2)
 
+    def signing_indexes(self):
+        return [ring.signing_step_index() for ring in self.rings]
+
 class Ring:
 
     def __init__(self, index):
@@ -35,6 +38,13 @@ class Ring:
         return {"ring_index": self.index,
                 "steps": [step.to_json() for step in self.steps]}
 
+    def signing_step_index(self):
+        assert [step for step in self.steps if step.is_signing_step()]
+        for step in self.steps:
+            if step.is_signing_step():
+                return step.index
+        # Impossible
+
 class Step:
 
     def __init__(self, index):
@@ -51,6 +61,9 @@ class Step:
     def to_json(self):
         return {"index": self.index,
                 "keys": [key.to_json() for key in self.keys]}
+
+    def is_signing_step(self):
+        return all(key.secret is not None for key in self.keys)
 
 class KeyPair:
 
