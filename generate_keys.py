@@ -78,5 +78,6 @@ step0.keys = [
 ring2.steps = [step0]
 
 rings_model = model.PirromeanRingsModel([ring0, ring1, ring2])
-print(rings_model)
+model.save("rings.model", rings_model)
+print("Saved model to 'rings.model'.")
 

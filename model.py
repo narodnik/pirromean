@@ -1,5 +1,16 @@
 import ecc
+import json
 import pprint
+
+def load(filename):
+    with open(filename) as infile:
+        data = json.load(infile)
+        rings_model = PirromeanRingsModel.load_json(data)
+    return rings_model
+
+def save(filename, rings_model):
+    with open(filename, "w") as outfile:
+        json.dump(rings_model.to_json(), outfile)
 
 class PirromeanRingsModel:
 
