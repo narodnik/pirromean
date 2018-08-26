@@ -64,7 +64,7 @@ ring1.steps = [step0, step1, step2, step3]
 # ring2 has 1 step
 # --------------------------------
 
-ring2 = model.Ring(1)
+ring2 = model.Ring(2)
 
 # ring1:step0 has 1 keys
 step0 = model.Step(0)

@@ -6,6 +6,12 @@ class PirromeanRingsModel:
     def __init__(self, rings):
         self.rings = rings
 
+    @classmethod
+    def load_json(cls, json):
+        rings = [Ring.load_json(ring_json)
+                 for ring_json in json["rings"]]
+        return cls(rings)
+
     def to_json(self):
         return {"rings": [ring.to_json() for ring in self.rings]}
 
@@ -18,6 +24,13 @@ class Ring:
         self.steps = []
         self.index = index
 
+    @classmethod
+    def load_json(cls, json):
+        self = cls(json["ring_index"])
+        self.steps = [Step.load_json(step_json)
+                      for step_json in json["steps"]]
+        return self
+
     def to_json(self):
         return {"ring_index": self.index,
                 "steps": [step.to_json() for step in self.steps]}
@@ -27,6 +40,13 @@ class Step:
     def __init__(self, index):
         self.keys = []
         self.index = index
+
+    @classmethod
+    def load_json(cls, json):
+        self = cls(json["index"])
+        self.keys = [KeyPair.load_json(key_json)
+                     for key_json in json["keys"]]
+        return self
 
     def to_json(self):
         return {"index": self.index,
@@ -40,20 +60,24 @@ class KeyPair:
 
     @classmethod
     def random(cls, generator, with_secret=False):
-        key = cls(None, None)
+        self = cls(None, None)
         secret = ecc.random_scalar()
         if with_secret:
-            key.secret = secret
-        key.public = generator * secret
-        return key
+            self.secret = secret
+        self.public = generator * secret
+        return self
 
     @classmethod
     def load(cls, public_data, secret_data=None):
-        key = cls(None, None)
+        self = cls(None, None)
         if secret_data is not None:
-            key.secret = ecc.deserialize_scalar(secret_data)
-        key.public = ecc.deserialize_point(public_data)
-        return key
+            self.secret = ecc.deserialize_scalar(secret_data)
+        self.public = ecc.deserialize_point(public_data)
+        return self
+
+    @classmethod
+    def load_json(cls, json):
+        return cls.load(json["public"], json["secret"])
 
     @property
     def public_hex(self):
