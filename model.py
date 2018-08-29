@@ -88,6 +88,11 @@ class Stargate:
     def add_output(self, portal):
         self.outputs.append(portal)
 
+    def has_empty_input_witnesses(self):
+        input_witnesses = [input.witness for input in self.inputs]
+        return any(witness.commit is None
+                   for witness in flatten(input_witnesses))
+
     def compute_challenge(self):
         witness = [portal.witness for portal in self.inputs]
         self.challenge = pirrhash(witness)
@@ -170,7 +175,7 @@ class Portal:
         for response, keypair, witness in zip(self.responses, self.keys,
                                               self.witness):
             witness.commit = response * keypair.generator + \
-                             challenge * keypair.public
+                             (-challenge) * keypair.public
 
     def random_witness(self):
         for keypair, witness in zip(self.keys, self.witness):
@@ -189,6 +194,13 @@ class Portal:
             response = (witness.secret + challenge * keypair.secret) % \
                 ecc.SECP256k1.order
             self.responses.append(response)
+
+            self._debug_verify_witness(keypair, witness, response, challenge)
+
+    def _debug_verify_witness(self, keypair, witness, response, challenge):
+        commit = response * keypair.generator + (-challenge) * keypair.public
+        assert witness.commit == keypair.generator * witness.secret
+        assert witness.commit == commit
 
     def __str__(self):
         return pprint.pformat(self.to_json(), indent=2)

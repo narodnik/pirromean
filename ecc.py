@@ -57,3 +57,6 @@ def deserialize_scalar(data):
         data = bytes.fromhex(data)
     return string_to_number(data)
 
+def negative(point):
+    return Point(point.curve(), point.x(), -point.y())
+

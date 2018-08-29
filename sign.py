@@ -51,6 +51,11 @@ if __name__ == "__main__":
     import model
     pirr = model.load("pirr.model")
     sign(pirr)
+    import verify
     clean = pirr.clone_public()
+    success = verify.verify(clean)
+    assert success
+    print("Signature verified.")
+    print()
     print(clean)
 
