@@ -1,0 +1,82 @@
+{
+  "stargates": [
+    {
+      "index": 0,
+      "challenge": null,
+      "is_start": true,
+      "is_end": false
+    },
+    {
+      "index": 1,
+      "challenge": null,
+      "is_start": false,
+      "is_end": false
+    },
+    {
+      "index": 2,
+      "challenge": null,
+      "is_start": false,
+      "is_end": false
+    },
+    {
+      "index": 3,
+      "challenge": null,
+      "is_start": false,
+      "is_end": true
+    }
+  ],
+  "portals": [
+    {
+      "keys": [
+        {
+          "public": "036c0cc237843a1fd52a39a8b8280442463cc4814253691b04f947c38764f1269c",
+          "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "secret": "87cdd97adc9d3c8e1eda2e78561b597de6622ae49105bed39908dc1a438ef717"
+        }
+      ],
+      "input": 0,
+      "output": 2,
+      "witness": [],
+      "response": []
+    },
+    {
+      "keys": [
+        {
+          "public": "032b1694ee94d510e3690d04d822689b82db59ecd1f427e9f5d0539a518a6c6f16",
+          "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "secret": "fc91abaed554c77dfd04b552cf5d32be543812d49c8dd4d2333e45d0a8b01e03"
+        }
+      ],
+      "input": 0,
+      "output": 1,
+      "witness": [],
+      "response": []
+    },
+    {
+      "keys": [
+        {
+          "public": "034c23d6fb9e4f02147db0637fd7805d34abdc8747b30abbe75814e797e6d6da88",
+          "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "secret": "7848b0c014f50616848dd4e9f3a2a343b0ef878c9d4b4f57dcc6380a96f2f381"
+        }
+      ],
+      "input": 1,
+      "output": 2,
+      "witness": [],
+      "response": []
+    },
+    {
+      "keys": [
+        {
+          "public": "03927ab9d3ffb36b9a1a0803b1f5a634c6c1a13669311bf581103c18e15a3007e6",
+          "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "secret": "f54e302e5adab94ca7f300535e723ed4def8a426d32694d9e8291e74e45b4dd2"
+        }
+      ],
+      "input": 2,
+      "output": 3,
+      "witness": [],
+      "response": []
+    }
+  ]
+}
