@@ -5,6 +5,11 @@ from ecdsa.ellipticcurve import Point
 from ecdsa.util import string_to_number, number_to_string
 
 G = SECP256k1.generator
+    
+def string_to_scalar(s):
+    n = string_to_number(s)
+    assert 0 <= n < SECP256k1.order
+    return n
 
 def random_scalar():
     return ecdsa.util.randrange(SECP256k1.order)

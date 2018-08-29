@@ -14,7 +14,7 @@ portal_a = model.Portal(
 )
 
 portal_b = model.Portal(
-    [ model.KeyPair.random(ecc.G, with_secret=True) ]
+    [ model.KeyPair.random(ecc.G, with_secret=False) ]
 )
 
 portal_c = model.Portal(
@@ -22,7 +22,7 @@ portal_c = model.Portal(
 )
 
 portal_d = model.Portal(
-    [ model.KeyPair.random(ecc.G, with_secret=True) ]
+    [ model.KeyPair.random(ecc.G, with_secret=False) ]
 )
 
 portal_a.link(gate_0, gate_2)

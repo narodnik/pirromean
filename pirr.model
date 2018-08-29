@@ -29,53 +29,69 @@
     {
       "keys": [
         {
-          "public": "036c0cc237843a1fd52a39a8b8280442463cc4814253691b04f947c38764f1269c",
+          "public": "0293d78cc16e35ed78f6ef94e3ca5b20a323d602a8dbf63b136429d21972f1d5c9",
           "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
-          "secret": "87cdd97adc9d3c8e1eda2e78561b597de6622ae49105bed39908dc1a438ef717"
+          "secret": "daa1e8aac60dafecf25479f19f18a32a9a19e4033aa36f7930bef36c6feeaba7"
         }
       ],
       "input": 0,
       "output": 2,
-      "witness": [],
+      "witness": [
+        {
+          "commit": null
+        }
+      ],
       "response": []
     },
     {
       "keys": [
         {
-          "public": "032b1694ee94d510e3690d04d822689b82db59ecd1f427e9f5d0539a518a6c6f16",
+          "public": "02cc5449211c3a7fd9d01e7fa037d3b7f588a80591e0b0dd61094fbb5590568dcc",
           "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
-          "secret": "fc91abaed554c77dfd04b552cf5d32be543812d49c8dd4d2333e45d0a8b01e03"
+          "secret": null
         }
       ],
       "input": 0,
       "output": 1,
-      "witness": [],
+      "witness": [
+        {
+          "commit": null
+        }
+      ],
       "response": []
     },
     {
       "keys": [
         {
-          "public": "034c23d6fb9e4f02147db0637fd7805d34abdc8747b30abbe75814e797e6d6da88",
+          "public": "033ab3d530488895ef5c4193275bbb4a979e665e608fab8145bff1d85785f77edb",
           "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
-          "secret": "7848b0c014f50616848dd4e9f3a2a343b0ef878c9d4b4f57dcc6380a96f2f381"
+          "secret": "ea731d77fc715c045b466ea4614d38cfe8f2c88d7c22ced9784cafe4f7062198"
         }
       ],
       "input": 1,
       "output": 2,
-      "witness": [],
+      "witness": [
+        {
+          "commit": null
+        }
+      ],
       "response": []
     },
     {
       "keys": [
         {
-          "public": "03927ab9d3ffb36b9a1a0803b1f5a634c6c1a13669311bf581103c18e15a3007e6",
+          "public": "02c684c154b84aa850d19840e94887d69fb10019c669359f9c2d03b2234d2ae4a0",
           "generator": "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
-          "secret": "f54e302e5adab94ca7f300535e723ed4def8a426d32694d9e8291e74e45b4dd2"
+          "secret": null
         }
       ],
       "input": 2,
       "output": 3,
-      "witness": [],
+      "witness": [
+        {
+          "commit": null
+        }
+      ],
       "response": []
     }
   ]
